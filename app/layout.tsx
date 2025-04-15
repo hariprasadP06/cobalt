@@ -7,8 +7,9 @@ export const metadata: Metadata = {
     title: "cobalt is an example app",
     description: "cobalt is a metal",
     images: {
-      url: "C:UsersAdminOneDriveDocumentsDevelopercobaltpublicimg.png",
+      url: "https://cobalt-dun.vercel.app/img.png",
       width: 800,
+      height: 600,
     },
   },
 };
