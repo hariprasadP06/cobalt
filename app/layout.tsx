@@ -1,22 +1,30 @@
+import "./globals.css";
 import { Metadata } from "next";
 import { PropsWithChildren } from "react";
+import NavigationBar from "./components/navigation-bar/NavigationBar";
 
 export const metadata: Metadata = {
   title: "cobalt",
   openGraph: {
-    title: "cobalt is an example app",
-    description: "cobalt is a metal",
+    title: " cobalt is an example project",
+    description: "cobalt is an element",
     images: {
       url: "img.png",
-      width: 800,
-      height: 600,
+      width: 1200,
+      height: 628,
     },
   },
 };
+
 const RootLayout = (props: PropsWithChildren) => {
   return (
     <html>
-      <body>{props.children}</body>
+      <body>
+        <div className="flex flex-col items-stretch">
+          <NavigationBar />
+          {props.children}
+        </div>
+      </body>
     </html>
   );
 };
